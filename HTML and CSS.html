@@ -1144,3 +1144,313 @@ a {
     text-decoration: none; 
     color: #cc0000;
 }
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>About Me</title>
+	</head>
+	<body>
+		<img src="https://s3.amazonaws.com/codecademy-blog/assets/46838757.png"/>
+		<p>We're Codecademy! We're here to help you learn to code.</p><br/><br/>
+		<div>
+			<a href="https://www.facebook.com/codecademy">Friend us on <span>Facebook!</span></a>
+		</div>
+	</body>
+</html>
+
+img {
+	display: block;
+	height: 100px;
+	width: 300px;
+	margin: auto;
+}
+
+p {
+	text-align: center;
+	font-family: Garamond, serif;
+	font-size: 18px;
+}
+
+div {
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	height: 50px;
+	width: 120px;
+	margin: auto;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #3D59AB;
+	font-family: Verdana, sans-serif;
+}
+
+span {
+	font-weight: bold;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>About Me</title>
+	</head>
+	<body>
+		<img src="https://s3.amazonaws.com/codecademy-blog/assets/46838757.png"/>
+		<p>We're Codecademy! We're here to help you learn to code.</p><br/><br/>
+		<div>
+		<a href="http://www.google.com">This is <span>Google!</span> </a> 	
+		</div>
+	</body>
+</html>
+
+img {
+	display: block;
+	height: 100px;
+	width: 300px;
+	margin: auto;
+}
+
+p {
+	text-align: center;
+	font-family: Garamond, serif;
+	font-size: 18px;
+}
+
+/*Start adding your CSS below!*/
+div {
+    height: 50px;
+    width: 120px;
+    border-color: #6495ED;
+    background-color: #BCD2EE;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: red;
+    font-family: Courier;
+    
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h3>I'm plain old font!</h3>
+		<div>
+			<h3>Me, too!</h3>
+			<div>
+				<h3>Me three!</h3>
+				<div>
+					<h3>Forget you guys. I'm about to be red!</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+div div div h3 {
+    color: red
+}
+
+* {
+    border: 1px dashed #3A5FCD;
+}
+
+/*Add your CSS below!*/
+p {
+	color: #00E5EE;
+}
+
+div p {
+	color: #CC0000;
+}
+
+* {
+    border: 2px solid #3A5FCD;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Ultimate Text Challenge</title>
+	</head>
+	<body>
+		<p>Introduction: Cascading with CSS</p>
+		<div>
+			<p>Synopsis: When you set a property of a selector like 'p' to a certain value, that value applies to <em>all</em> p tags.
+			If, however, you change that same property to a different value for a more specific instance of p,
+			that change will <em>override</em> the 'general rule'.
+			</p>
+			<ul>
+				<li><p>If you say p { font-family: Garamond}, all 'p's will have the font Garamond.</p></li>
+				<li><p>BUT if you say li p {font-family: Verdana}, 'p's outside of 'li's will be
+					   in Garamond, and 'p's INSIDE 'li's will be in Verdana.
+				</p></li>
+				<li><p>The more specific your selectors are, the higher importance CSS gives to the styling you apply!</p></li>
+			</ul>
+		</div>
+		<p>Summary: Greater specificity makes CSS prioritize that particular styling.</p>
+	</body>
+</html>
+
+*Add your CSS below!*/
+p {font-family: Garamond;
+}
+    
+    body > p { font-weight: bold;
+}
+
+div > p { color: #7AC5CD;
+}
+
+div ul li p { color: #000000; 
+        text-decoration: underline;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Ultimate Text Challenge</title>
+	</head>
+	<body>
+		<p id="intro">Cascading with CSS</p>
+		<div>
+			<p>When you set a property of a selector like 'p' to a certain value, that value applies to <em>all</em> p tags.
+			If, however, you change that same property to a different value for a more specific instance of p,
+			that change will <em>override</em> the 'general rule'.
+			</p>
+			<ul>
+				<li><p>If you say p { font-family: Garamond}, all 'p's will have the font Garamond.</p></li>
+				<li><p class="list_item">BUT if you say li p {font-family: Verdana}, 'p's outside of 'li's will be
+					   in Garamond, and 'p's INSIDE 'li's will be in Verdana.
+				</p></li>
+				<li><p class="list_item">The more specific your selectors are, the higher importance CSS gives to the styling you apply!</p></li>
+			</ul>
+		</div>
+		<p id="summary">Greater specificity makes CSS prioritize that particular styling.</p>
+	</body>
+</html>
+
+p {
+	font-family: Garamond, serif;
+}
+
+#intro {
+	font-weight: bold;
+	color: #000000;
+}
+
+div p {
+	color: #7AC5CD;
+}
+
+li p {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+}
+
+.list_item {
+	font-family: Vivaldi, cursive;
+}
+
+#summary {
+	font-size: 20px;
+	color: #000000;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+			<p>Cascading with CSS</p>
+		<div>
+			<p class = "fancy">Blah Blah <em>all</em> p tags.
+			and a bit more info and data <em>override</em> the 'general rule'
+			</p>
+			<p class = "fancy">Yak Yak <em>all</em> p tags.
+			and a bit more info and data <em>override</em> the 'general rule'
+			</p>
+			</div>
+	</body>
+</html>
+
+/*Define your CSS class .fancy below!*/
+
+.fancy {
+	font-family: cursive; color: #0000CD;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<!--Add your HTML elements with the ID "serious" below!-->
+	    <p>Cascading with CSS</p>
+		    <div>
+			    <p id = "serious">Blah Blah <em>all</em> p tags.
+			and a bit more info and data <em>override</em> the 'general rule'
+			    </p>
+			    <p>Yak Yak <em>all</em> p tags.
+			and a bit more info and data <em>override</em> the 'general rule'
+			    </p>
+			</div>
+	</body>
+</html>
+
+/*Define your CSS id #serious below!*/
+
+#serious {
+    font-family: Courier;
+    color: #CC0000;
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h2 id = "intro">Introduction</h2>
+		<h3 class = "standout">Classes and IDs in CSS</h3>
+		<p class = "standout">Classes and IDs are super easy in CSS. You're using them right now!</p>
+		<h3>Regular HTML Selectors</h3>
+		<p>If you don't bother with a class or ID, an HTML element just gets
+		   the regular CSS styling for that element—or the default styling if you
+		   don't specify any particular styling on the stylesheet.
+		</p>
+	</body>
+</html>
+
+/*Add your CSS below!*/
+
+#intro {
+    color: #B83C3A;
+}
+
+.standout {
+    color: #F7AC5F;
+    font-family: Verdana;
+}
+
